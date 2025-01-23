@@ -159,7 +159,7 @@ This interactive dashboard provides a visual representation of the revenue data 
 * **Filters:** The dashboard allows you to filter data by game, language, and age group, providing a more granular view of specific user segments.
 * **Tooltips:** Hovering over data points reveals detailed information and underlying values.
 
-**Explore the interactive dashboard:** [https://public.tableau.com/views/RevenueAnalysis_17369684236020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/RevenueAnalysis_17369684236020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+**Explore the interactive dashboard:** [https://public.tableau.com/views/RevenueAnalysis_17369684236020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://surl.li/njehdm)
 
 ## Key Findings and Optimization Recommendations
 
