@@ -110,6 +110,7 @@ JOIN
     project.games_paid_users pu
 ON 
     cm.user_id = pu.user_id;
+~~~
 **Comments:**
 
 This SQL query performs the following actions:
