@@ -111,33 +111,32 @@ JOIN
 ON 
     cm.user_id = pu.user_id;
 ~~~
-
-Comments:
+**Comments:**
 
 This SQL query performs the following actions:
 
-Creates CTE monthly_revenue:
+*   **Creates CTE `monthly_revenue`:**
+    *   Calculates the total revenue (`total_revenue`) for each user (`user_id`) in each game (`game_name`) for each month (`payment_month`).
+    *   Uses `DATE_TRUNC('month', payment_date)` to group payments by month.
 
-Calculates the total revenue (total_revenue) for each user (user_id) in each game (game_name) for each month (payment_month).
-Uses DATE_TRUNC('month', payment_date) to group payments by month.
-Creates CTE calculated_metrics:
+*   **Creates CTE `calculated_metrics`:**
+    *   Adds additional metrics to `monthly_revenue` using window functions:
+        *   `previous_paid_month`: Date of the user's previous payment.
+        *   `previous_paid_month_revenue`: Revenue from the user's previous payment.
+        *   `last_paid_month`: Date of the user's last payment.
+        *   `next_paid_month`: Date of the user's next payment.
+        *   `next_calendar_month`: The next calendar month after the current `payment_month`.
+        *   `new_mrr`: New monthly recurring revenue (MRR) from users making their first purchase.
+        *   `new_users`: Number of new users in the month.
+        *   `churn_users`: Number of users who churned in this month and did not return.
+        *   `churn_revenue`: Revenue from users who churned in this month.
+        *   `churned_revenue`: Revenue lost due to gaps between payments or no future payments.
+        *   `expansion_revenue`: Increase in MRR compared to the previous month.
+        *   `contraction_revenue`: Decrease in MRR compared to the previous month.
 
-Adds additional metrics to monthly_revenue using window functions:
-previous_paid_month: Date of the user's previous payment.
-previous_paid_month_revenue: Revenue from the user's previous payment.
-last_paid_month: Date of the user's last payment.
-next_paid_month: Date of the user's next payment.
-next_calendar_month: The next calendar month after the current payment_month.
-new_mrr: New monthly recurring revenue (MRR) from users making their first purchase.
-new_users: Number of new users in the month.
-churn_users: Number of users who churned in this month and did not return.
-churn_revenue: Revenue from users who churned in this month.
-churned_revenue: Revenue lost due to gaps between payments or no future payments.
-expansion_revenue: Increase in MRR compared to the previous month.
-contraction_revenue: Decrease in MRR compared to the previous month.
-Joins calculated_metrics with games_paid_users:
+*   **Joins `calculated_metrics` with `games_paid_users`:**
+    *   Joins the data on `user_id` to add information about the user's language (`language`) and age (`age`) to the calculated metrics.
 
-Joins the data on user_id to add information about the user's language (language) and age (age) to the calculated metrics.
 The query returns a table with data about users, their payments, and various revenue-related metrics.
 
 
