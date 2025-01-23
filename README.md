@@ -161,26 +161,6 @@ This interactive dashboard provides a visual representation of the revenue data 
 
 **Explore the interactive dashboard:** [https://public.tableau.com/views/RevenueAnalysis_17369684236020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/RevenueAnalysis_17369684236020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-# Key Findings and Optimization Recommendations
-
-**Key Findings:**
-
-*   Revenue demonstrates a positive trend overall, but there are issues with churn, particularly in December where churn exceeded new user acquisition.
-*   User acquisition and retention strategies need improvement, specifically focusing on reducing churn and increasing user lifetime value.
-*   It's important to track ARPPU (Average Revenue Per Paying User), which fluctuates between $40-$50, and LT (Lifetime), which averages 97 days, to evaluate monetization effectiveness and identify areas for improvement.
-*   New MRR (revenue from new users) shows a positive trend, but churn is also increasing, highlighting the need for improved user retention strategies.
-*   There are months with significant MRR contraction, indicating potential issues with pricing, product updates, or seasonality that need to be addressed.
-
-**Recommendations:**
-
-*   Analyze the reasons for the high churn rate in December, considering factors like seasonality, promotions, product issues, or competitive pressures.
-*   Develop loyalty programs to retain users, such as offering rewards, exclusive content, or personalized discounts based on user behavior and preferences.
-*   Conduct A/B testing of different marketing campaigns to acquire new users, experimenting with various channels, creatives, and targeting strategies to optimize acquisition efforts.
-*   Segment users and personalize offers to increase ARPPU, tailoring promotions and in-app purchases to specific user segments based on their demographics, behavior, and purchase history.
-*   Investigate the reasons for MRR contraction in specific months, examining factors like pricing changes, product updates, or external events that may have impacted user spending.
-*   Consider offering incentives or promotions to re-engage churned users, such as discounts, free trials, or exclusive content to encourage them to return to the app.
-*   Analyze user behavior within the app to identify areas for improvement in the user experience and potentially reduce churn, focusing on features, navigation, and onboarding processes.
-*   Continuously monitor key metrics (MRR, churn, ARPPU, LTV) to track progress and identify new areas for optimization, using data visualization and analytics tools to gain insights and inform decision-making.
 ## Key Findings and Optimization Recommendations
 
 ### Key Findings
