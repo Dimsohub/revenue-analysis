@@ -16,7 +16,7 @@ The data for this project was extracted from a PostgreSQL database containing tw
 
 * **games_paid_users:** Contains information about users who have made in-app purchases, including their user ID, game name, language, device model (whether it's an older model), and age.
 * **games_payments:** Contains information about payments made within the games, including the user ID, game name, payment date, and revenue amount in USD.
-* ## Tools
+## Tools
 
 The following tools were used in this project:
 
