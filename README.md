@@ -16,3 +16,9 @@ The data for this project was extracted from a PostgreSQL database containing tw
 
 * **games_paid_users:** Contains information about users who have made in-app purchases, including their user ID, game name, language, device model (whether it's an older model), and age.
 * **games_payments:** Contains information about payments made within the games, including the user ID, game name, payment date, and revenue amount in USD.
+* ## Tools
+
+The following tools were used in this project:
+
+* **DBeaver:** A free and open-source universal database tool used to connect to the PostgreSQL database, query the data, and export it for analysis.
+* **Tableau Public:** A free platform for creating interactive data visualizations. Tableau Public was used to create charts and dashboards to analyze and present the revenue data.
